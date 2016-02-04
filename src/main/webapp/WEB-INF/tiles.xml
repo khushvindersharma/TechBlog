@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>  
+    <definition name="base.definition"  
+        template="/WEB-INF/jsp/layout.jsp">  
+        <put-attribute name="title" value="TechBlog" />  
+        <put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />  
+        <put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="ads" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />  
+    </definition>  
+ <definition name="welcome" extends="base.definition">  
+        <put-attribute name="title" value="TechBlog" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/welcome.jsp" />  
+    </definition>  
+     <definition name="javaIntro" extends="base.definition">  
+        <put-attribute name="title" value="Java Introduction" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/javaIntro.jsp" />  
+    </definition>
+</tiles-definitions> 
