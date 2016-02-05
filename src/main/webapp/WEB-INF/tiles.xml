@@ -20,4 +20,13 @@
         <put-attribute name="title" value="Java Introduction" />  
         <put-attribute name="body" value="/WEB-INF/jsp/javaIntro.jsp" />  
     </definition>
+     <definition name="addNewBlog" extends="base.definition">  
+        <put-attribute name="title" value="Add New Blog" />  
+         <put-attribute name="header" value="/WEB-INF/jsp/admin/header.jsp" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/addNewBlog.jsp" />  
+    </definition>
+    <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="Login" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />  
+    </definition>
 </tiles-definitions> 
