@@ -1,0 +1,116 @@
+
+.content_area{
+  min-height: 450px;
+  border: 1px solid #888;
+  box-shadow: 10px 10px 5px #888;
+  height: auto;
+  background: #FFF repeat-y center;
+  margin-left:50px;
+  }
+
+
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body a:hover { color: #fff; }
+
+nav { background-color: #3DB2E1 !important; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+
+nav li,
+nav .nav-toggle {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+}
+
+nav .dropdown > a:after {
+  content: 'V';
+  position: absolute;
+  right: 15px;
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+
+nav .dropdown.open,
+.desktop nav li:hover { background-color: #34495e; }
+
+nav .dropdown.open > a:after,
+.desktop nav li:hover > a:after {
+  -webkit-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+nav .dropdown ul {
+  position: relative;
+  background-color: #3DB2E1;
+  display: none;
+}
+
+nav a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.desktop nav { width: 150px; }
+
+.desktop nav li {
+  text-align: left;
+  width: 150px;
+}
+
+.desktop nav li:hover ul {
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
+  visibility: visible;
+}
+
+.desktop nav .dropdown:hover > a:after {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.desktop nav .dropdown > a:after {
+  content: '>';
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+
+.desktop nav .dropdown ul {
+  top: 0;
+  left: 150px;
+  position: absolute;
+  display: block !important;
+  visibility: hidden;
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+
+.desktop nav .nav-toggle { display: none; }

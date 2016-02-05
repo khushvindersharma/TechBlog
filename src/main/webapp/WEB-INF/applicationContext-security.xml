@@ -4,7 +4,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
         http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.0.xsd">
-
+<http pattern="/css/**" security="none"/>
 	<http auto-config='true'>
 		<intercept-url pattern="/**" access="hasRole('ROLE_USER')" />
 	</http>
@@ -17,4 +17,5 @@
 			</user-service>
 		</authentication-provider>
 	</authentication-manager>
+
 </beans:beans>
