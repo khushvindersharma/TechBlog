@@ -35,17 +35,13 @@
    <li><a href='#'>Products</a></li>
    <li><a href='#'>Company</a></li>
    <li><a href='#'>Contact</a></li>
-   <li>
-   
-  
-	
-   
-   </li>
+   <span class="welcmtext">
+   <c:if test="${pageContext.request.userPrincipal.name != null}">
+			Welcome : ${pageContext.request.userPrincipal.name} | <a style="color:white" href="javascript:formSubmit()"> Logout</a>
+	</c:if></span>
 </ul>
 
-<c:if test="${pageContext.request.userPrincipal.name != null}">
-			Welcome : ${pageContext.request.userPrincipal.name} | <a href="javascript:formSubmit()"> Logout</a>
-	</c:if>
+
 	
 </div>
 
