@@ -6,6 +6,7 @@
 	color: #a94442;
 	background-color: #f2dede;
 	border-color: #ebccd1;
+	width:60%;
 }
 
 .msg {
@@ -25,4 +26,95 @@
 	background: #fff;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
+}
+.login_text
+{
+	width:40% !important;
+}
+.slideUp{
+	animation-name: slideUp;
+	-webkit-animation-name: slideUp;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;
+
+	visibility: visible !important;			
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+	}
+	50%{
+		transform: translateY(-8%);
+	}
+	65%{
+		transform: translateY(4%);
+	}
+	80%{
+		transform: translateY(-4%);
+	}
+	95%{
+		transform: translateY(2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}	
+}
+
+@-webkit-keyframes slideUp {
+	0% {
+		-webkit-transform: translateY(100%);
+	}
+	50%{
+		-webkit-transform: translateY(-8%);
+	}
+	65%{
+		-webkit-transform: translateY(4%);
+	}
+	80%{
+		-webkit-transform: translateY(-4%);
+	}
+	95%{
+		-webkit-transform: translateY(2%);
+	}			
+	100% {
+		-webkit-transform: translateY(0%);
+	}	
+}
+@media (min-width: 1200px)
+{
+.container1 {
+  width: 1136px!important;
+}}
+.container1
+{
+	
+	  top: 7%;
+  position: absolute;
+  left: 6%;
+
+}
+.custom-form
+{
+	  top: 10%;
+  margin-top: 50px;
+}
+.submitbtn
+{
+	  width: 20%;
+  height: 45px;
+  text-align: center;
+  /* vertical-align: middle; */
+  /* display: table-footer-group; */
+  margin: 20 auto;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.login_head
+{
+	  margin-bottom: 30px;
 }

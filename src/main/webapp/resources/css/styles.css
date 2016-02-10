@@ -180,8 +180,8 @@ font-weight:bold;
     height:50px;
     width:50px;
     background-size:60px;
-    opacity:0.5;
-    transition:ease 500ms;
+/*     opacity:0.5; */
+/*     transition:ease 500ms; */
     margin-left:-20px;
     width:70px;
      background: #4060A5;
@@ -206,8 +206,8 @@ font-weight:bold;
     height:50px;
     width:50px;
     background-size:60px;
-    opacity:0.5;
-    transition:ease 500ms;
+/*     opacity:0.5; */
+/*     transition:ease 500ms; */
     margin-left:-20px;
     width:70px;
    
@@ -231,8 +231,8 @@ font-weight:bold;
     height:50px;
     width:50px;
     background-size:60px;
-    opacity:0.5;
-    transition:ease 500ms;
+/*     opacity:0.5; */
+/*     transition:ease 500ms; */
     margin-left:-20px;
     width:70px;
     background: #0094BC;
@@ -255,10 +255,12 @@ font-weight:bold;
     height:50px;
     width:50px;
     background-size:60px;
-    opacity:0.5;
-    transition:ease 500ms;
+/*     opacity:0.5; */
+/*     transition:ease 500ms; */
     margin-left:-20px;
     width:70px;
-  
-     background: #E64522;
+    background: #E64522;
 }
+
+
+
