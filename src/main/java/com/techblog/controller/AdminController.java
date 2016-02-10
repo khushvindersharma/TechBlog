@@ -7,10 +7,9 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping("/admin")  
 public class AdminController {
-
 	 @RequestMapping("/addNewBlog")  
-	    public ModelAndView addNewBlog() {  
-	        String message = "Welcome to Admin";  
-	        return new ModelAndView("addNewBlog", "message", message);  
-	    }  
+	 public ModelAndView addNewBlog() {  
+		 String message = "Welcome to Admin";  
+		 return new ModelAndView("addNewBlog", "message", message);  
+	 }  
 }

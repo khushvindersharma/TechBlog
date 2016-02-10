@@ -15,18 +15,20 @@
 			authentication-failure-url="/login?error" 
 			username-parameter="username"
 			password-parameter="password" />
-			<logout logout-url="/j_spring_security_logout" logout-success-url="/welcome" />
+			<logout logout-url="/j_spring_security_logout" logout-success-url="/welcome" delete-cookies="JSESSIONID"/>
 		<!-- enable csrf protection -->
 		<csrf/>
 	</http>
 	
-	<authentication-manager alias="authenticationManager">
+	<!-- <authentication-manager alias="authenticationManager">
 		<authentication-provider>
 			<user-service>
 				<user name="a" password="a" authorities="ROLE_USER, ROLE_ADMIN" />
 				<user name="b" password="b" authorities="ROLE_USER" />
 			</user-service>
 		</authentication-provider>
-	</authentication-manager>
-
+	</authentication-manager> -->
+<authentication-manager alias="authenticationManager">
+        <authentication-provider user-service-ref="loginDAO" />
+    </authentication-manager>
 </beans:beans>
